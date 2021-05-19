@@ -3,6 +3,7 @@ import Image from "next/image"
 import { EmojiHappyIcon } from '@heroicons/react/outline'
 import { CameraIcon, VideoCameraIcon } from '@heroicons/react/solid'
 
+
 function InputBox() {
     const [session] = useSession()
 
