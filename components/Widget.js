@@ -9,7 +9,7 @@ const contacts = [
     { src: "https://links.papareact.com/snf", name: "Mark Zuckerburg" },
     { src: "https://links.papareact.com/d0c", name: "Harry Potter" },
     { src: "https://links.papareact.com/6gg", name: "Queen Liz" },
-    { src: "https://links.papareact.com/r57", name: "James Bond 007" },
+    { src: "https://links.papareact.com/r57", name: "James Bond (007)" },
 ]
 
 function Widget() {
@@ -23,9 +23,9 @@ function Widget() {
                     <DotsHorizontalIcon className="h-6" />
                 </div>
             </div>
-            {contacts.map((contact) => {
-                <Contact key={contact.src} src={contact.src} name={contact.name} />
-            })}
+            {contacts.map(contact => (
+                <Contact key={contact.name} src={contact.src} name={contact.name} />
+            ))}
         </div>
     )
 }
