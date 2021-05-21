@@ -5,4 +5,4 @@ This Facebook Clone is a fully responsive Web App. The features include Image Up
 **Prerequistics:** Facebook Account
 
 **Technologies:** ReactJs, Next.js, Firebase, Next-Auth with Facebook for Developers
-**Libraries:** HeroIcons, TailWindCSS,
+**Libraries:** HeroIcons, TailWindCSS, React-Scrollbar-hidden

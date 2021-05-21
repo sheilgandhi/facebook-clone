@@ -9,7 +9,11 @@ function Post({ name, email, message, postImage, image, timestamp }) {
                     <img className="rounded-full" src={image} alt="" width={40} height={40} />
                     <div className="">
                         <p className="font-medium">{name}</p>
-                        <p className="text-xs text-gray-500">{new Date(timestamp?.toDate()).toLocaleString()}</p>
+                        {timestamp ? (
+                            <p className="text-xs text-gray-500">{new Date(timestamp?.toDate()).toLocaleString()}</p>
+                        ) : (
+                            <p className="text-xs text-gray-400">Loading</p>
+                        )}
                     </div>
                 </div>
                 <p className="pt-4">{message}</p>
